@@ -1,9 +1,31 @@
+.borda{
+    border: 1px solid blue;
+}
+.centroxy
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.width_and_height_100
+{
+    width: 100%;
+    height: 100%;
+}
+.backcovercenter
+{
+    background-size: cover;
+    background-position: center;
+}
+
+
 /*---------------------------- Configs Gerais ----------------------------------------*/
 
 *
 {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -16,24 +38,77 @@
 
 header
 {
-    background-color: rgb(192,192,192);
+    
+
+    background: linear-gradient(to bottom, rgb(192,192,192),rgb(158, 158, 158),rgb(192,192,192));
+    width: 100%;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+
+
+/*--------------- Conteudo do Header ----------------------*/
+
+header nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: auto;
 }
-header nav
+
+#link_icone_menu_preto
 {
-    background-color: rgb(158, 158, 158);
+    width: 5%;
+    height: 5%;                     /* O Tamanho de como o "icone_do_menu" ira aparecer esta sendo determinado pelo tamanho do link(<a>) do proprio */
+    margin-left: 2%;
+}
+#link_icone_menu_preto img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#link_icone_menu_perfil
+{
+    width: 5%;                      /* O Tamanho de como o "icone_do_perfil" ira aparecer esta sendo determinado pelo tamanho do link(<a>) do proprio */
+    height: 5%;
+    margin-right: 2%;
+}
+#link_icone_menu_perfil img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------- Carrossel ----------------------------*/
+
+#carrossel
+{
+    width: 100%;
+    height: 60vw;
+    overflow: hidden;
+}
+#crl_img1
+{
+    background-image: url("../imagens/carrossel/carrossel_img1.webp");
+}
+#crl_img2
+{
+    background-image: url("../imagens/carrossel/carrossel_img2.avif");
+}
+#crl_img3
+{
+    background-image: url("../imagens/carrossel/carrossel_img3.webp");
+}
+#crl_img4
+{
+    background-image: url("../imagens/carrossel/carrossel_img4.webp");
 }
 
 
 
-
-
-
-
-
-
-h1
-{
-    color: blue;
-}
